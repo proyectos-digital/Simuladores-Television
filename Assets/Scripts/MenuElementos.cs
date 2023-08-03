@@ -5,21 +5,43 @@ using UnityEngine;
 public class MenuElementos : MonoBehaviour
 {
     [Header ("Activación de páneles")]
-    public GameObject luces;
-    public GameObject microfonos;
+    public GameObject panelMenu;
+    public GameObject panelLuces;
+    public GameObject panelMicrofonos;
+    public GameObject panelControles;
     public GameObject panelGrabacion;
-    private bool panelActivo;
 
+    private bool panelActivo;
+    public void ActivarMenu()
+    {
+        panelActivo = !panelActivo;
+        panelMenu.SetActive(panelActivo);
+        if(panelActivo == false)
+        {
+            panelLuces.SetActive(false);
+            panelMicrofonos.SetActive(false);
+            panelControles.SetActive(false);
+        }
+    }
     public void ActivarPanelLuces()
     {
-        luces.SetActive(true);
-        microfonos.SetActive(false);
+        panelLuces.SetActive(true);
+        panelMicrofonos.SetActive(false);
+        panelControles.SetActive(false);
     }
 
     public void ActivarPanelMicroofonos()
     {
-        luces.SetActive(false);
-        microfonos.SetActive(true);
+        panelLuces.SetActive(false);
+        panelMicrofonos.SetActive(true);
+        panelControles.SetActive(false);
+    }
+
+    public void ActivarControles()
+    {
+        panelLuces.SetActive(false);
+        panelMicrofonos.SetActive(false);
+        panelControles.SetActive(true);
     }
 
     public void ActivarPanelGrabacion()

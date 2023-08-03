@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class RotacionAltura : MonoBehaviour
 {
-    public GameObject objeto;
+    [Header("Objeto a rotar")]
+    public GameObject[] objetos;
     public Slider rotationSlider;
     public int tipoRotacion;
 
@@ -14,18 +15,24 @@ public class RotacionAltura : MonoBehaviour
         rotationSlider.onValueChanged.AddListener(EdicionObjeto);
     }
 
-    void EdicionObjeto(float value)
+    public void EdicionObjeto(float value)
     {
-        float rotationAmount = value * 360f;
-
+        float valorRotacionX = value * 360f;
+        float valorRotacionY = value * 360f;
         switch (tipoRotacion)
         {
             case 0:
-                objeto.transform.rotation = Quaternion.Euler(rotationAmount, 0f, 0f); //Gira de derecha a izquierda
+                for (int i = 0; i < objetos.Length; i++)
+                {
+                    objetos[i].transform.rotation = Quaternion.Euler(valorRotacionX, 0f, 0f);
+                }
                 break;
 
             case 1:
-                objeto.transform.rotation = Quaternion.Euler(0f, rotationAmount, 0f); //Gira de manera horizontal
+                for (int i = 0; i < objetos.Length; i++)
+                {
+                    objetos[i].transform.rotation = Quaternion.Euler(0f, valorRotacionY, 0f);
+                }
                 break;
         }
     }

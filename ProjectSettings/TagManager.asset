@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Mano
   - CvPrincipal
+  - BtnInstancia
+  - btnInstancia
   layers:
   - Default
   - TransparentFX

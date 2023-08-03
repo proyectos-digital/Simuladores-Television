@@ -6,9 +6,10 @@ using TMPro;
 
 public class InstanciaAccesorios : MonoBehaviour
 {
+    [Header ("Nuevo Objeto")]
     public GameObject objetoPrefab;
     public Transform mano;
-    public int cantidadObjetos = 10;
+    public int cantidadObjetos = 2;
     public TMP_Text aviso;
 
     void Start()
