@@ -7,17 +7,20 @@ public class ActivarPanel : MonoBehaviour
 {   
     [Header ("Paneles")]
     public GameObject canvasEditarElm;
-    InstanciaAccesorios inAccesorios;
+    InstanciarElementos inAccesorios;
     
     void Start()
     {
         canvasEditarElm.SetActive(false);
-        inAccesorios = GameObject.FindWithTag("btnInstancia").GetComponent<InstanciaAccesorios>();
+        inAccesorios = GameObject.FindWithTag("btnInstancia").GetComponent<InstanciarElementos>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        canvasEditarElm.SetActive(true);
+        if(other.CompareTag("Player"))
+        {
+            canvasEditarElm.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -25,10 +28,39 @@ public class ActivarPanel : MonoBehaviour
         canvasEditarElm.SetActive(false);
     }
 
-    public void Eliminar()
+    public void EliminarAccesorio(int accesorioElim)
     {
-        Destroy(gameObject);
-        inAccesorios.cantidadObjetos++;
-        inAccesorios.aviso.text = "" + inAccesorios.cantidadObjetos;
+        switch (accesorioElim)
+        {
+            case 0:
+                Destroy(gameObject);
+                inAccesorios.cantLuminaria++;
+                inAccesorios.txtCantLuminaria.text = "" + inAccesorios.cantLuminaria;
+                break;
+
+            case 1:
+                Destroy(gameObject);
+                inAccesorios.cantAperture300++;
+                inAccesorios.txtCantAperture300.text = "" + inAccesorios.cantAperture300;
+                break;
+
+            case 2:
+                Destroy(gameObject);
+                inAccesorios.cantSennheiser++;
+                inAccesorios.txtCantSennheiser.text = "" + inAccesorios.cantSennheiser;
+                break;
+
+            case 3:
+                Destroy(gameObject);
+                inAccesorios.cantNeewer660++;
+                inAccesorios.txtCantNeewer660.text = "" + inAccesorios.cantNeewer660;
+                break;
+
+            case 4:
+                Destroy(gameObject);
+                inAccesorios.cantGodox++;
+                inAccesorios.txtCantGodox.text = "" + inAccesorios.cantGodox;
+                break;
+        }
     }
 }

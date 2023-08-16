@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1820,12 +1820,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8622177193962688588}
         m_TargetAssemblyTypeName: ActivarPanel, Assembly-CSharp
-        m_MethodName: Eliminar
-        m_Mode: 1
+        m_MethodName: EliminarAccesorio
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2035,8 +2035,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.27040645, y: 0.25382543, z: 0.27988183}
-  m_Center: {x: 0.002368788, y: 0.08646183, z: -0.061589103}
+  m_Size: {x: 0.27040645, y: 0.19841985, z: 0.27988183}
+  m_Center: {x: 0.002368788, y: 0.058759034, z: -0.061589103}
 --- !u!54 &7829556021022759715
 Rigidbody:
   m_ObjectHideFlags: 0
