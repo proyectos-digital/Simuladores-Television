@@ -5,8 +5,8 @@ using UnityEngine;
 public class CamController : MonoBehaviour
 {
     [Header ("Cámaras")]
-    public GameObject camaraActriz;
-    public GameObject camaraLateral;
+    public GameObject camaraPrincipal;
+    public GameObject camaraAuxiliar;
     public GameObject camaraJugador;
     public GameObject panelCentral;
     public GameObject panelEdicion;
@@ -21,24 +21,24 @@ public class CamController : MonoBehaviour
 
     public void CamActriz()
     {
-        camaraActriz.SetActive(true);
-        camaraLateral.SetActive(false);
+        camaraPrincipal.SetActive(true);
+        camaraAuxiliar.SetActive(false);
         camaraJugador.SetActive(false);
         panelCentral.SetActive(false);
     }
 
     public void CamLateral()
     {
-        camaraActriz.SetActive(false);
-        camaraLateral.SetActive(true);
+        camaraPrincipal.SetActive(false);
+        camaraAuxiliar.SetActive(true);
         camaraJugador.SetActive(false);
         panelCentral.SetActive(false);
     }
 
     public void CamJugador()
     {
-        camaraActriz.SetActive(true);
-        camaraLateral.SetActive(false);
+        camaraPrincipal.SetActive(true);
+        camaraAuxiliar.SetActive(false);
         camaraJugador.SetActive(true);
         panelCentral.SetActive(true);
     }

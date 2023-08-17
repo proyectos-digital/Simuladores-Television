@@ -67,6 +67,8 @@ public class DroneCtrl : MonoBehaviour
                 enAterrizaje = false;
                 transform.position = posicionInicial;
                 dron.transform.rotation = mano.rotation;
+                camaraPrincipal.transform.rotation = dron.transform.rotation;
+                camaraGrabacion.transform.rotation = dron.transform.rotation;
             }
         }
 
@@ -161,6 +163,10 @@ public class DroneCtrl : MonoBehaviour
 
         camaraPrincipal.transform.SetParent(posicionJugador);
         camaraGrabacion.transform.SetParent(posicionJugador);
+
+        camaraPrincipal.transform.rotation = mano.rotation;
+        camaraGrabacion.transform.rotation = mano.rotation;
+
         camDronAct = false;
         panelInfo.SetActive(true);
         panelConfi.SetActive(false);

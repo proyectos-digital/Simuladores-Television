@@ -12560,7 +12560,7 @@ GameObject:
   - component: {fileID: 939940086}
   - component: {fileID: 939940085}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: CamPrincipal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12851,7 +12851,7 @@ GameObject:
   - component: {fileID: 975313932}
   - component: {fileID: 975313931}
   m_Layer: 0
-  m_Name: Camprincipal
+  m_Name: CamAuxiliar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14571,8 +14571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fbdf913dd26ac45bc748679f3fe22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camaraActriz: {fileID: 939940083}
-  camaraLateral: {fileID: 975313930}
+  camaraPrincipal: {fileID: 939940083}
+  camaraAuxiliar: {fileID: 975313930}
   camaraJugador: {fileID: 547687196}
   panelCentral: {fileID: 1600975087}
   panelEdicion: {fileID: 599570304}
@@ -26356,8 +26356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fbdf913dd26ac45bc748679f3fe22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camaraActriz: {fileID: 939940083}
-  camaraLateral: {fileID: 975313930}
+  camaraPrincipal: {fileID: 939940083}
+  camaraAuxiliar: {fileID: 975313930}
   camaraJugador: {fileID: 547687196}
   panelCentral: {fileID: 1600975087}
   panelEdicion: {fileID: 1886831269}

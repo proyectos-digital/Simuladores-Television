@@ -1698,7 +1698,7 @@ GameObject:
   - component: {fileID: 190261434}
   - component: {fileID: 190261433}
   m_Layer: 5
-  m_Name: RenderCamLateral
+  m_Name: RenderCamAuxiliar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3120,7 +3120,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4929f185912b63648ad21fa0b87b1da0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4929f185912b63648ad21fa0b87b1da0,
         type: 3}
@@ -3140,17 +3140,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4929f185912b63648ad21fa0b87b1da0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.873
+      value: -21.009
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4929f185912b63648ad21fa0b87b1da0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.775
+      value: 0.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4929f185912b63648ad21fa0b87b1da0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -73.006
+      value: -73.274
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4929f185912b63648ad21fa0b87b1da0,
         type: 3}
@@ -3229,13 +3229,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fbdf913dd26ac45bc748679f3fe22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camaraActriz: {fileID: 0}
-  camaraLateral: {fileID: 1108117517}
-  camaraJugador: {fileID: 0}
-  panelCentral: {fileID: 0}
+  camaraPrincipal: {fileID: 874954670}
+  camaraAuxiliar: {fileID: 1108117517}
+  camaraJugador: {fileID: 2075598414}
+  panelCentral: {fileID: 2027147886}
   panelEdicion: {fileID: 920095710}
   panelInfo: {fileID: 1752341212}
-  controllerP: {fileID: 0}
+  controllerP: {fileID: 2098816072}
 --- !u!114 &311480271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7046,7 +7046,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C\xE1mara lateral"
+  m_text: "C\xE1mara auxiliar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -8213,8 +8213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetos:
-  - {fileID: 1108117517}
-  - {fileID: 1282628653}
+  - {fileID: 311480267}
   rotationSlider: {fileID: 803139793}
   tipoRotacion: 1
 --- !u!114 &803139793
@@ -8710,17 +8709,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ca73f52d16250854bb5ef1af7273ae22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.949
+      value: -20.934
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca73f52d16250854bb5ef1af7273ae22,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.743
+      value: 0.574
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca73f52d16250854bb5ef1af7273ae22,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -72.516
+      value: -72.872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca73f52d16250854bb5ef1af7273ae22,
         type: 3}
@@ -8915,7 +8914,7 @@ GameObject:
   - component: {fileID: 874954673}
   - component: {fileID: 874954672}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: CamPrincipal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12445,7 +12444,7 @@ GameObject:
   - component: {fileID: 1108117518}
   - component: {fileID: 1108117519}
   m_Layer: 0
-  m_Name: Camprincipal
+  m_Name: CamAuxiliar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18979,7 +18978,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e3281f3c33210264f929980f3d84c70e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3281f3c33210264f929980f3d84c70e,
         type: 3}
@@ -19062,13 +19061,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fbdf913dd26ac45bc748679f3fe22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camaraActriz: {fileID: 874954670}
-  camaraLateral: {fileID: 0}
-  camaraJugador: {fileID: 0}
-  panelCentral: {fileID: 0}
+  camaraPrincipal: {fileID: 874954670}
+  camaraAuxiliar: {fileID: 1108117517}
+  camaraJugador: {fileID: 2075598414}
+  panelCentral: {fileID: 2027147886}
   panelEdicion: {fileID: 939584538}
   panelInfo: {fileID: 1592577067}
-  controllerP: {fileID: 0}
+  controllerP: {fileID: 2098816072}
 --- !u!114 &1783041400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19704,7 +19703,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 75, y: 19.999996}
-  m_SizeDelta: {x: 200, y: 40}
+  m_SizeDelta: {x: 220, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1844566803
 MonoBehaviour:
@@ -19726,7 +19725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C\xE1mara Actriz"
+  m_text: "C\xE1mara principal"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -20366,7 +20365,7 @@ GameObject:
   - component: {fileID: 1889112320}
   - component: {fileID: 1889112319}
   m_Layer: 5
-  m_Name: RenderCamActriz
+  m_Name: RenderCamPrincipal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22328,8 +22327,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 838911415}
-  - {fileID: 311480268}
   - {fileID: 1783041398}
+  - {fileID: 311480268}
   m_Father: {fileID: 1115886733}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
