@@ -73,14 +73,14 @@ public class DroneCtrl : MonoBehaviour
         if (camDronAct == true)
         {
             panelInfo.SetActive(false);
+            animator.Play("blade");
         }
     }
 
     public void Despegue()
     {
         enDespegue = true;
-        enAterrizaje = false;
-        animator.Play("blade");
+        enAterrizaje = false; 
         dronController.enabled = true;
         btnCerrar.SetActive(false);
     }
@@ -122,7 +122,10 @@ public class DroneCtrl : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        panelInfo.SetActive(true);
+        if(other.CompareTag("Player"))
+        {
+            panelInfo.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
