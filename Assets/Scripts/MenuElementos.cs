@@ -21,6 +21,8 @@ public class MenuElementos : MonoBehaviour
             panelLuces.SetActive(false);
             panelMicrofonos.SetActive(false);
             panelControles.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
     public void ActivarPanelLuces()
@@ -48,5 +50,10 @@ public class MenuElementos : MonoBehaviour
     {
         panelActivo = !panelActivo;
         panelGrabacion.SetActive(panelActivo);
+        if (panelActivo == false)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 }
