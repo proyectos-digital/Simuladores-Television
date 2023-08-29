@@ -10,6 +10,7 @@ public class MenuElementos : MonoBehaviour
     public GameObject panelMicrofonos;
     public GameObject panelControles;
     public GameObject panelGrabacion;
+    public PlayerController playerController;
 
     private bool panelActivo;
     public void ActivarMenu()
@@ -21,8 +22,7 @@ public class MenuElementos : MonoBehaviour
             panelLuces.SetActive(false);
             panelMicrofonos.SetActive(false);
             panelControles.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            playerController.LockCursor();
         }
     }
     public void ActivarPanelLuces()
@@ -50,10 +50,9 @@ public class MenuElementos : MonoBehaviour
     {
         panelActivo = !panelActivo;
         panelGrabacion.SetActive(panelActivo);
-        if (panelActivo == false)
+        if (!panelActivo)
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            playerController.LockCursor();
         }
     }
 }

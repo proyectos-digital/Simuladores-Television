@@ -1,81 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Movement")]
     public float moveSpeed;
+    public float mouseSensitivy;
 
-    public float groundDrag;
+    private float verticalRotation;
+    private CharacterController characterController;
 
-    [Header("Ground Check")]
-    public float playerHeight;
-    public LayerMask whatIsGround;
-    bool grounded;
-
-    public Transform orientation;
-
-    float horizontalInput;
-    float verticalInput;
-
-    Vector3 moveDirection;
-
-    Rigidbody rb;
-
-    void Start()
+    private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        characterController = GetComponent<CharacterController>();
+        LockCursor();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
-
-        MyInput();
-        SpeedControl();
-
-        //handled drag
-        if (grounded)
-        {
-            rb.drag = groundDrag;
-        }
-        else
-        {
-            rb.drag = 0;
-        }
-    }
-
-    private void FixedUpdate()
+    private void Update()
     {
         MovePlayer();
+        MoveCam();
+        UnlockCursor();
     }
 
-
-    private void MyInput()
+    public void MovePlayer()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        float forwardSpeed = Input.GetAxis("Vertical") * moveSpeed;
+        float sideSpeed = Input.GetAxis("Horizontal") * moveSpeed;
+
+        Vector3 speed = new Vector3(sideSpeed, 0, forwardSpeed);
+        speed = transform.rotation * speed;
+
+        characterController.SimpleMove(speed);
     }
 
-    private void MovePlayer()
+    public void MoveCam()
     {
-        //Calcular dirección del movimiento
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        float horizontalRotation = Input.GetAxis("Mouse X") * mouseSensitivy;
+        verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivy;
 
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        verticalRotation = Mathf.Clamp(verticalRotation, -90, 90);
+
+        transform.Rotate(0, horizontalRotation, 0);
+        Camera.main.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
     }
 
-    private void SpeedControl()
+    public void LockCursor()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
-        if (flatVel.magnitude > moveSpeed)
+    public void UnlockCursor()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

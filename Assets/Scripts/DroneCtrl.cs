@@ -171,5 +171,6 @@ public class DroneCtrl : MonoBehaviour
         panelInfo.SetActive(true);
         panelConfi.SetActive(false);
         playerController.enabled = true;
+        playerController.LockCursor();
     }
 }
