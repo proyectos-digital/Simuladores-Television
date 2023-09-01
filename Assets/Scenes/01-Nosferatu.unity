@@ -6391,7 +6391,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &368927381
 PrefabInstance:
@@ -10716,6 +10716,75 @@ Transform:
   m_Father: {fileID: 491369037}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &641094463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.643
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37899375
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.333
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c1eb552bcb00124e83fe1d273ac2548,
+        type: 3}
+      propertyPath: m_Name
+      value: antorcha
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9c1eb552bcb00124e83fe1d273ac2548, type: 3}
 --- !u!1 &643293740
 GameObject:
   m_ObjectHideFlags: 0
@@ -12336,7 +12405,7 @@ Transform:
   - {fileID: 70915472}
   - {fileID: 303542895}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746343583 stripped
 GameObject:
@@ -26860,7 +26929,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1590714592
 PrefabInstance:
@@ -27353,7 +27422,7 @@ RectTransform:
   - {fileID: 1861557943}
   - {fileID: 1612234971}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -33330,7 +33399,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c0314da4a9c1780499d7f3b62408e56e, type: 2}
+  - {fileID: 9029499367897438357, guid: 9c1eb552bcb00124e83fe1d273ac2548, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
