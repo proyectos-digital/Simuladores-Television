@@ -8,21 +8,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BirchLeaves
-  m_Shader: {fileID: 4800000, guid: ee7e4c9a5f6364b688a332c67fc32cca, type: 3}
-  m_ValidKeywords:
-  - _ALPHATEST_ON
-  - _SPECULAR_SETUP
+  m_Shader: {fileID: -6465566751694194690, guid: d9bae029a6a9712449e3ccdecd93419c,
+    type: 3}
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: 00ec082e8158e464497f0764cfdb848b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: ee8680ca49b912746958dd16c5d23051, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -88,6 +90,7 @@ Material:
     - _AO: 4.5
     - _AlphaClip: 1
     - _BaseLight: 0.273
+    - _BendStrength: 5
     - _Blend: 0
     - _BlendOp: 0
     - _BumpScale: 1
@@ -108,6 +111,7 @@ Material:
     - _Occlusion: 8.5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.05
@@ -122,8 +126,23 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.7075472, g: 0.52425605, b: 0.28368637, a: 1}
     - _Color: {r: 0.59688574, g: 0.7352941, b: 0.57850343, a: 1}
+    - _Direction: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.1509434, g: 0.077268645, b: 0, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
+    - _Vector3: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &2259082039450484867
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
