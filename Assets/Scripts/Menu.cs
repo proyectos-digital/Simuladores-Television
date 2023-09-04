@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Image barLoading;
+    AsyncOperation operationBar;
+
+    public void LoadScene(string name)
     {
-        
+        StartCoroutine(LoadSce(name));
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator LoadSce(string name)
     {
-        
+        operationBar = SceneManager.LoadSceneAsync(name);
+        while(!operationBar.isDone)
+        {
+            barLoading.fillAmount = operationBar.progress;
+            yield return null;
+        }
     }
 }
