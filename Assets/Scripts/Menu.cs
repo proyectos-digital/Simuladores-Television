@@ -8,15 +8,34 @@ public class Menu : MonoBehaviour
 {
     public Image barLoading;
     AsyncOperation operationBar;
+    public GameManager gameManager;
 
-    public void LoadScene(string name)
+    //Para cargar las demás escenas.
+    public void LoadCases(string nameScene)
     {
-        StartCoroutine(LoadSce(name));
+        StartCoroutine(SceneLoad(nameScene));
     }
 
-    IEnumerator LoadSce(string name)
+    //Para cargar los dos escenarios de nosferatu
+    public void LoadEnvironment(int scenery)
     {
-        operationBar = SceneManager.LoadSceneAsync(name);
+        switch(scenery)
+        {
+            case 0:
+                StartCoroutine(SceneLoad("01-Nosferatu"));
+                gameManager.PresionarBtn1();
+                break;
+
+            case 1:
+                StartCoroutine(SceneLoad("01-Nosferatu"));
+                gameManager.PresionarBtn2();
+                break;
+        }
+    }
+
+    IEnumerator SceneLoad(string nameScene)
+    {
+        operationBar = SceneManager.LoadSceneAsync(nameScene);
         while(!operationBar.isDone)
         {
             barLoading.fillAmount = operationBar.progress;
