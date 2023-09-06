@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class AmbientLightController : MonoBehaviour {
-
+public class AmbientLightController : MonoBehaviour
+{
     [SerializeField] private Light ambientLight;
     [SerializeField] private LensFlareComponentSRP sunFlare;
     [SerializeField] private Light[] lampLights;
+    [SerializeField] private Material EmissionMaterial;
 
-    public Material dayMaterial, nightMaterial,sunriseMaterial,sunsetMaterial;
+    public Material dayMaterial, nightMaterial, sunriseMaterial, sunsetMaterial;
 
-    public void ChangeDay(float time) {
+    public void ChangeDay(float time)
+    {
         switch (time)
         {
             case 1:
@@ -20,19 +22,22 @@ public class AmbientLightController : MonoBehaviour {
                 RenderSettings.fog = true;
                 RenderSettings.fogColor = new Color32(0x47, 0x6A, 0x7D, 0xff);
                 sunFlare.gameObject.SetActive(true);
+                EmissionMaterial.DisableKeyword("_EMISSION");
                 break;
             case 2:
                 RenderSettings.skybox = dayMaterial;
                 RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Skybox;
                 sunFlare.gameObject.SetActive(false);
+                EmissionMaterial.DisableKeyword("_EMISSION");
                 break;
             case 3:
                 RenderSettings.skybox = sunsetMaterial;
                 RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Skybox;
                 RenderSettings.fog = true;
-                RenderSettings.fogColor = new Color32(0x67,0x4E,0x28,0xff);
+                RenderSettings.fogColor = new Color32(0x67, 0x4E, 0x28, 0xff);
                 RenderSettings.fogDensity = 0.023f;
-                sunFlare.gameObject.SetActive(true);
+                //sunFlare.gameObject.SetActive(true);
+                EmissionMaterial.DisableKeyword("_EMISSION");
                 break;
             case 4:
                 RenderSettings.skybox = nightMaterial;
@@ -42,27 +47,36 @@ public class AmbientLightController : MonoBehaviour {
                 RenderSettings.fogColor = new Color32(0x25, 0x29, 0x35, 0xff);
                 RenderSettings.fogDensity = 0.04f;
                 sunFlare.gameObject.SetActive(false);
+                EmissionMaterial.EnableKeyword("_EMISSION");
                 break;
         }
     }
 
-    public void ChangeIntensity(float value){
+    public void ChangeIntensity(float value)
+    {
         ambientLight.intensity = value;
     }
 
-    public void ChangeDensitiyFog(float value){
+    public void ChangeDensitiyFog(float value)
+    {
         RenderSettings.fogDensity = value;
     }
 
-    public void Lamps(bool value){
-        Debug.Log("Bool: " + value);
+    public void Lamps(bool value)
+    {
         foreach (Light light in lampLights)
         {
             light.gameObject.SetActive(value);
         }
     }
 
-    public void ChangeTemperature(float value) {
+    public void Emission(bool value)
+    {
+
+    }
+
+    public void ChangeTemperature(float value)
+    {
         ambientLight.colorTemperature = value;
     }
 }

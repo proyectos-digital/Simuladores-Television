@@ -22870,6 +22870,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6285344842125457605, guid: be07c2a1a3640e840aa6e8b48bf95b04,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285344842125457605, guid: be07c2a1a3640e840aa6e8b48bf95b04,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6285344842563012377, guid: be07c2a1a3640e840aa6e8b48bf95b04,
         type: 3}
       propertyPath: VelocityModule.x.scalar
@@ -30720,7 +30730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1290217675
 Transform:
   m_ObjectHideFlags: 0
