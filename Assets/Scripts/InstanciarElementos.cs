@@ -30,6 +30,9 @@ public class InstanciarElementos : MonoBehaviour
     [Header ("Referencia al jugador")]
     public Transform manoJugador;
 
+    [Header("Luces superiores")]
+    public GameObject pnlLuces;
+
     void Start()
     {
         txtCantLuminaria.text = "" + cantLuminaria;
@@ -87,6 +90,22 @@ public class InstanciarElementos : MonoBehaviour
                     txtCantGodox.text = "" + cantGodox;
                 }
                 break;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            pnlLuces.SetActive(true);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            pnlLuces.SetActive(true);
         }
     }
 }
