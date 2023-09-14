@@ -22,12 +22,12 @@ public class Menu : MonoBehaviour
         switch(scenery)
         {
             case 0:
-                StartCoroutine(SceneLoad("01-Nosferatu"));
+                StartCoroutine(SceneLoad("Testing2"));
                 gameManager.PresionarBtn1();
                 break;
 
             case 1:
-                StartCoroutine(SceneLoad("01-Nosferatu"));
+                StartCoroutine(SceneLoad("Testing2"));
                 gameManager.PresionarBtn2();
                 break;
         }

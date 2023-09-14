@@ -31364,6 +31364,7 @@ MonoBehaviour:
   txtCantNeewer660: {fileID: 528288130}
   txtCantGodox: {fileID: 1075905444}
   manoJugador: {fileID: 1209915737}
+  pnlLuces: {fileID: 0}
 --- !u!4 &1194463367
 Transform:
   m_ObjectHideFlags: 0
