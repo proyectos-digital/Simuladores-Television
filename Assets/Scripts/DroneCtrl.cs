@@ -5,50 +5,49 @@ using UnityEngine;
 public class DroneCtrl : MonoBehaviour
 {
     [Header("Propiedades del Dron")]
-    public GameObject dron;
-    public Transform posicionDron;
     public bool camDronAct = false;
     public float velMovimiento;
     public float velRotacion;
-    public float limitePerimetro;
-    public float alturaMax = 5f;
-    public float velocidad = 2f;
+    public float alturaMax;
+    public float velocidad;
     public Animator animator;
+    //public GameObject dron;
+
     private bool enDespegue = false;
     private bool enAterrizaje = false;
     private Vector3 posicionInicial;
     
     [Header("Cámaras")]
     public Camera camaraPrincipal;
-    public Camera camaraGrabacion;
 
-    [Header("Referencias al jugador")]
-    public GameObject player;
-    public Transform posicionJugador;
-    public Transform mano;
+    [Header("Controladores")]
+    public DroneCtrl dronController;
+    public PlayerController playerController;
+
+    [Header ("Posición de elementos")]
+    public Transform posicionCamOriginal;
+    public Transform puntoAterrizaje;
+    public Transform posicionDron;
     private Transform padreOriginal;
-    
-    [Header("Paneles")]
+    //public Transform mano;
+
+    [Header("UI")]
     public GameObject panelInfo;
     public GameObject panelConfi;
     public GameObject btnCerrar;
 
-    [Header("Controladores")]
-    public DroneCtrl dronController;
-    private PlayerController playerController;
-
     void Start()
     {
         dronController = GetComponent<DroneCtrl>();
-        playerController = player.GetComponent<PlayerController>();
         dronController.enabled = false;
+        posicionInicial = puntoAterrizaje.position;
     }
 
     void Update()
     {
         ControlDron();
 
-        posicionInicial = mano.position;                                        //Actualizamos la posición inicial en cada cuadro
+       //posicionInicial = mano.position;                                        //Actualizamos la posición inicial en cada cuadro
 
         if (enDespegue)
         {
@@ -66,9 +65,8 @@ public class DroneCtrl : MonoBehaviour
             {
                 enAterrizaje = false;
                 transform.position = posicionInicial;
-                dron.transform.rotation = mano.rotation;
-                camaraPrincipal.transform.rotation = dron.transform.rotation;
-                camaraGrabacion.transform.rotation = dron.transform.rotation;
+                //dron.transform.rotation = mano.rotation;
+                //camaraPrincipal.transform.rotation = dron.transform.rotation;
             }
         }
 
@@ -115,43 +113,21 @@ public class DroneCtrl : MonoBehaviour
         Vector3 movimiento = redireccion * verticalInput * velMovimiento * Time.deltaTime;
         Vector3 nuevaPosicion = transform.position + movimiento;
 
-        //Límites del área para el movimiento del dron
-       /* nuevaPosicion.x = Mathf.Clamp(nuevaPosicion.x, -limitePerimetro, limitePerimetro);
-        nuevaPosicion.z = Mathf.Clamp(nuevaPosicion.z, -limitePerimetro, limitePerimetro);*/
-
         transform.position = nuevaPosicion;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            panelInfo.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        panelInfo.SetActive(false);
-    }
     public void ModoCamara()
     {
         if (camDronAct)
             return;
 
+        //Asignamos la cámara al Dron en su posición y rotación
         padreOriginal = camaraPrincipal.transform.parent;
-
         camaraPrincipal.transform.position = posicionDron.position;
-        camaraGrabacion.transform.position = posicionDron.position;
-
         camaraPrincipal.transform.rotation = posicionDron.rotation;
-        camaraGrabacion.transform.rotation = posicionDron.rotation;
+        camaraPrincipal.transform.SetParent(posicionDron);
 
         camDronAct = true;
-
-        camaraPrincipal.transform.SetParent(posicionDron);
-        camaraGrabacion.transform.SetParent(posicionDron);
-
         panelConfi.SetActive(true);
         panelInfo.SetActive(false);
         playerController.enabled = false;
@@ -161,16 +137,28 @@ public class DroneCtrl : MonoBehaviour
         if (!camDronAct)
             return;
 
-        camaraPrincipal.transform.SetParent(posicionJugador);
-        camaraGrabacion.transform.SetParent(posicionJugador);
-
-        camaraPrincipal.transform.rotation = mano.rotation;
-        camaraGrabacion.transform.rotation = mano.rotation;
+        //Asignamos la cámara al jugador en su posición y rotación
+        camaraPrincipal.transform.SetParent(posicionCamOriginal);
+        camaraPrincipal.transform.position = posicionCamOriginal.position;
+        camaraPrincipal.transform.rotation = posicionCamOriginal.rotation;
 
         camDronAct = false;
         panelInfo.SetActive(true);
         panelConfi.SetActive(false);
         playerController.enabled = true;
         playerController.LockCursor();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            panelInfo.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        panelInfo.SetActive(false);
     }
 }
