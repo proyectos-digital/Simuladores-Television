@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,51 +9,50 @@ public class CamController : MonoBehaviour
     public GameObject camaraPrincipal;
     public GameObject camaraAuxiliar;
     public GameObject camaraJugador;
+
+    [Header("UI")]
     public GameObject panelCentral;
     public GameObject panelEdicion;
     public GameObject panelInfo;
 
-    private PlayerController playerController;
-    public GameObject controllerP;
-    private void Start()
+    [Header ("Jugador")]
+    public PlayerController playerController;
+    public void ManejoCamaras(int caso)
     {
-        playerController = controllerP.GetComponent<PlayerController>();
-    }
+        switch (caso)
+        {
+            case 0: //Cam Principal
+                camaraPrincipal.SetActive(true);
+                camaraAuxiliar.SetActive(false);
+                camaraJugador.SetActive(false);
+                panelCentral.SetActive(false);
+                break;
 
-    public void CamActriz()
-    {
-        camaraPrincipal.SetActive(true);
-        camaraAuxiliar.SetActive(false);
-        camaraJugador.SetActive(false);
-        panelCentral.SetActive(false);
-    }
+            case 1: //Cam Auxiliar
+                camaraPrincipal.SetActive(false);
+                camaraAuxiliar.SetActive(true);
+                camaraJugador.SetActive(false);
+                panelCentral.SetActive(false);
+                break;
 
-    public void CamLateral()
-    {
-        camaraPrincipal.SetActive(false);
-        camaraAuxiliar.SetActive(true);
-        camaraJugador.SetActive(false);
-        panelCentral.SetActive(false);
-    }
+            case 2: //Volver a cámara del jugador
+                camaraPrincipal.SetActive(true);
+                camaraAuxiliar.SetActive(false);
+                camaraJugador.SetActive(true);
+                panelCentral.SetActive(true);
+                break;
 
-    public void CamJugador()
-    {
-        camaraPrincipal.SetActive(true);
-        camaraAuxiliar.SetActive(false);
-        camaraJugador.SetActive(true);
-        panelCentral.SetActive(true);
-    }
+            case 3: //Abrir la cámara
+                panelEdicion.SetActive(true);
+                panelInfo.SetActive(false);
+                playerController.enabled = false;
+                break;
 
-    public void AbrirCamara()
-    {
-        panelEdicion.SetActive(true);
-        panelInfo.SetActive(false);
-        playerController.enabled = false;
-    }
-    public void VolverPanel()
-    {
-        panelEdicion.SetActive(false);
-        panelInfo.SetActive(true);
-        playerController.enabled = true;
+            case 4: //Volver al panel
+                panelEdicion.SetActive(false);
+                panelInfo.SetActive(true);
+                playerController.enabled = true;
+                break;
+        }
     }
 }

@@ -14180,7 +14180,7 @@ MonoBehaviour:
   panelCentral: {fileID: 699248624}
   panelEdicion: {fileID: 1957917674}
   panelInfo: {fileID: 1578310788}
-  controllerP: {fileID: 1958049928}
+  playerController: {fileID: 0}
 --- !u!114 &821804987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29412,24 +29412,24 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 821804986}
         m_TargetAssemblyTypeName: CamController, Assembly-CSharp
-        m_MethodName: VolverPanel
-        m_Mode: 1
+        m_MethodName: ManejoCamaras
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 821804986}
         m_TargetAssemblyTypeName: CamController, Assembly-CSharp
-        m_MethodName: CamJugador
-        m_Mode: 1
+        m_MethodName: ManejoCamaras
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -32774,7 +32774,7 @@ MonoBehaviour:
   panelCentral: {fileID: 699248624}
   panelEdicion: {fileID: 21450569}
   panelInfo: {fileID: 1422817114}
-  controllerP: {fileID: 1958049928}
+  playerController: {fileID: 0}
 --- !u!65 &1960319668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33315,24 +33315,24 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 821804986}
         m_TargetAssemblyTypeName: CamController, Assembly-CSharp
-        m_MethodName: CamLateral
-        m_Mode: 1
+        m_MethodName: ManejoCamaras
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 821804986}
         m_TargetAssemblyTypeName: CamController, Assembly-CSharp
-        m_MethodName: AbrirCamara
-        m_Mode: 1
+        m_MethodName: ManejoCamaras
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

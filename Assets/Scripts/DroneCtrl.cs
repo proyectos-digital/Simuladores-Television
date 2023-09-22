@@ -35,6 +35,7 @@ public class DroneCtrl : MonoBehaviour
     public GameObject panelInfo;
     public GameObject panelConfi;
     public GameObject btnCerrar;
+    public GameObject panelCtrlDia;
 
     void Start()
     {
@@ -154,11 +155,13 @@ public class DroneCtrl : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             panelInfo.SetActive(true);
+            panelCtrlDia.SetActive(false);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         panelInfo.SetActive(false);
+        panelCtrlDia.SetActive(true);
     }
 }

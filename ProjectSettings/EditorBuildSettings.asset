@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 8412de3cd140bb947b9d86270926bb93
   - enabled: 1
-    path: Assets/Scenes/Testing2.unity
-    guid: 3f70a07e8546d6c4dade448b255b734b
-  - enabled: 1
     path: Assets/Scenes/01-Nosferatu.unity
-    guid: 5fd50f8f046665f4cab8d9ba83cb1419
+    guid: 3f70a07e8546d6c4dade448b255b734b
   - enabled: 1
     path: Assets/Scenes/03-Zona_Rural.unity
     guid: 541730d67cd569c4f8b7a01e82e9bba8
