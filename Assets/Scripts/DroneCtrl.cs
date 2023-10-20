@@ -84,6 +84,7 @@ public class DroneCtrl : MonoBehaviour
         enAterrizaje = false; 
         dronController.enabled = true;
         btnCerrar.SetActive(false);
+        playerController.UnlockCursor();
     }
 
     public void Aterrizaje()

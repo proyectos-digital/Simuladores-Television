@@ -26,6 +26,8 @@ public class CamController : MonoBehaviour
                 camaraAuxiliar.SetActive(false);
                 camaraJugador.SetActive(false);
                 panelCentral.SetActive(false);
+                panelInfo.SetActive(false);
+
                 break;
 
             case 1: //Cam Auxiliar
