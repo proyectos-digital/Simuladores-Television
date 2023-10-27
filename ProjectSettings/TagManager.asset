@@ -8,6 +8,7 @@ TagManager:
   - CvPrincipal
   - btnInstancia
   - EscenaNosferatu
+  - CanvasCam
   layers:
   - Default
   - TransparentFX

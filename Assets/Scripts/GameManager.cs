@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject nosferatu;
     public GameObject estudio;
+    public AudioListener audioListener;
 
     public static bool btn1 = false;
     void Start()
@@ -19,12 +20,14 @@ public class GameManager : MonoBehaviour
         if (btn1)
         {
             nosferatu.SetActive(true);
+            audioListener.enabled = false;
             estudio.SetActive(false);
         }
         else
         {
             nosferatu.SetActive(false);
             estudio.SetActive(true);
+            audioListener.enabled = true;
         }
     }    
 

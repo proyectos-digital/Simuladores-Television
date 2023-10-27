@@ -1171,8 +1171,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -5, y: -0.886}
+  m_SizeDelta: {x: -20, y: -3.544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8622177193443369010
 GameObject:
@@ -1694,11 +1694,11 @@ RectTransform:
   - {fileID: 8622177193128307781}
   - {fileID: 8622177193458507475}
   m_Father: {fileID: 8622177194442903968}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.1}
+  m_AnchoredPosition: {x: 0, y: -49.2}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8622177194027107842
@@ -1800,12 +1800,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8622177194442903968}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -44.100006}
-  m_SizeDelta: {x: 200, y: 25}
+  m_AnchoredPosition: {x: 0, y: -22.9}
+  m_SizeDelta: {x: 150, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8622177194249946314
 CanvasRenderer:
@@ -1835,10 +1835,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Rotaci\xF3n Micr\xF3fono"
+  m_text: "ROTACI\xD3N"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1862,14 +1862,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1939,8 +1939,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.886}
+  m_SizeDelta: {x: 0, y: -3.544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8622177194267417061
 CanvasRenderer:
@@ -2013,8 +2013,8 @@ RectTransform:
   - {fileID: 8622177193709467777}
   - {fileID: 3371838562834990659}
   - {fileID: 4475530915911355114}
-  - {fileID: 8622177194027107840}
   - {fileID: 8622177194249946312}
+  - {fileID: 8622177194027107840}
   - {fileID: 8622177193984672344}
   - {fileID: 8622177194459692055}
   m_Father: {fileID: 8622177193947099657}
@@ -2022,7 +2022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 140, y: 145}
+  m_AnchoredPosition: {x: 120, y: 125}
   m_SizeDelta: {x: 240, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8622177194442903999
@@ -2345,6 +2345,7 @@ GameObject:
   - component: {fileID: 7829556021022759715}
   - component: {fileID: 8622177193962688589}
   - component: {fileID: 8622177193962688588}
+  - component: {fileID: 7313689579357374782}
   m_Layer: 0
   m_Name: Sennheiser_MKH416
   m_TagString: Untagged
@@ -2446,3 +2447,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasEditarElm: {fileID: 8622177194442903997}
+--- !u!81 &7313689579357374782
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8892719925669653784}
+  m_Enabled: 1

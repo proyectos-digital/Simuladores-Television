@@ -7,14 +7,16 @@ public class ActivarPanel : MonoBehaviour
 {   
     [Header ("Paneles")]
     public GameObject canvasEditarElm;
-    InstanciarElementos inAccesorios;
+    private InstanciarElementos inAccesorios;
     private PlayerController playerController;
+    private CamController camController;
     
     void Start()
     {
         canvasEditarElm.SetActive(false);
         inAccesorios = GameObject.FindWithTag("btnInstancia").GetComponent<InstanciarElementos>();
         playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        camController = GameObject.FindWithTag("CanvasCam").GetComponent<CamController>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -29,6 +31,8 @@ public class ActivarPanel : MonoBehaviour
     {
         canvasEditarElm.SetActive(false);
         playerController.LockCursor();
+        camController.ManejoCamaras(2);
+        camController.ManejoCamaras(4);
     }
 
     public void EliminarAccesorio(int accesorioElim)

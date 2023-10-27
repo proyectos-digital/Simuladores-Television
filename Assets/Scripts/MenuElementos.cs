@@ -31,9 +31,11 @@ public class MenuElementos : MonoBehaviour
                     playerController.moveSpeed = 5;
                     playerController.mouseSensitivy = 2;
                     playerController.LockCursor();
-                    aniPanel.Play("Close");
-                    //aniPanel.SetTrigger("Close");
-                    //aniPanel.SetTrigger("CloseSound");
+                    //aniPanel.Play("CloseLight");
+                    //aniPanel.Play("CloseSound");
+
+                    aniPanel.SetTrigger("CloseLight");
+                    aniPanel.SetTrigger("CloseSound");
 
                 }
                 break;
