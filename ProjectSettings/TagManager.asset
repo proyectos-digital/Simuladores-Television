@@ -9,6 +9,7 @@ TagManager:
   - btnInstancia
   - EscenaNosferatu
   - CanvasCam
+  - EfectosDia
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,6 @@ public class MenuElementos : MonoBehaviour
     public GameObject panelControles;
     public GameObject modificaControles;
     public PlayerController playerController;
-    public Animator aniPanel;
     private bool panelActivo = false;
 
     public void ActivarUI(int panel)
@@ -31,12 +30,6 @@ public class MenuElementos : MonoBehaviour
                     playerController.moveSpeed = 5;
                     playerController.mouseSensitivy = 2;
                     playerController.LockCursor();
-                    //aniPanel.Play("CloseLight");
-                    //aniPanel.Play("CloseSound");
-
-                    aniPanel.SetTrigger("CloseLight");
-                    aniPanel.SetTrigger("CloseSound");
-
                 }
                 break;
 

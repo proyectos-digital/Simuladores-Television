@@ -10,7 +10,7 @@ public class DroneCtrl : MonoBehaviour
     public float velRotacion;
     public float alturaMax;
     public float velocidad;
-    public Animator animator;
+    //public Animator animator;
     //public GameObject dron;
 
     private bool enDespegue = false;
@@ -74,7 +74,7 @@ public class DroneCtrl : MonoBehaviour
         if (camDronAct == true)
         {
             panelInfo.SetActive(false);
-            animator.Play("blade");
+            //animator.Play("blade");
         }
     }
 

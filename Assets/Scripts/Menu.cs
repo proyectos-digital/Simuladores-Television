@@ -30,6 +30,10 @@ public class Menu : MonoBehaviour
                 StartCoroutine(SceneLoad("01-Nosferatu"));
                 gameManager.PresionarBtn2();
                 break;
+
+            case 2:
+                Application.Quit();
+                break;
         }
     }
 

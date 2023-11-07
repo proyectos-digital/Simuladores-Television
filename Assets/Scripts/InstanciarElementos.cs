@@ -32,6 +32,8 @@ public class InstanciarElementos : MonoBehaviour
 
     [Header("Luces superiores")]
     public GameObject pnlLuces;
+    public MenuElementos pnlElementos;
+
 
     void Start()
     {
@@ -42,7 +44,7 @@ public class InstanciarElementos : MonoBehaviour
         txtCantGodox.text = "" + cantGodox;
     }
 
-    public void NuevoAccersorio(int accesorio)
+public void NuevoAccersorio(int accesorio)
     {
         switch(accesorio)
         {
@@ -52,6 +54,7 @@ public class InstanciarElementos : MonoBehaviour
                     Instantiate(luminaria1, manoJugador.transform.position, manoJugador.transform.rotation);
                     cantLuminaria--;
                     txtCantLuminaria.text = "" + cantLuminaria;
+                    pnlElementos.ActivarUI(0);  
                 }
                 break;
 

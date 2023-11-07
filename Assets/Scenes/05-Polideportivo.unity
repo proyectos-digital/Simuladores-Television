@@ -3446,8 +3446,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 4
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5058,6 +5058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CamAuxiliar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4929f185912b63648ad21fa0b87b1da0,
+        type: 3}
+      propertyPath: m_TagString
+      value: CanvasCam
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4929f185912b63648ad21fa0b87b1da0, type: 3}
@@ -9730,6 +9735,7 @@ MonoBehaviour:
   txtCantGodox: {fileID: 522124811}
   manoJugador: {fileID: 222550103}
   pnlLuces: {fileID: 0}
+  pnlElementos: {fileID: 0}
 --- !u!4 &602220251
 Transform:
   m_ObjectHideFlags: 0
@@ -10546,7 +10552,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918468785}
+      - m_Target: {fileID: 1231342276}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
@@ -12159,7 +12165,6 @@ GameObject:
   - component: {fileID: 753842426}
   - component: {fileID: 753842425}
   - component: {fileID: 753842424}
-  - component: {fileID: 753842423}
   - component: {fileID: 753842421}
   - component: {fileID: 753842422}
   m_Layer: 0
@@ -12204,22 +12209,8 @@ MonoBehaviour:
   inputKeyDown: {fileID: 493744088}
   inputKeyRight: {fileID: 388802161}
   inputKeyLeft: {fileID: 1350703923}
-  moveSpeed: 7
+  moveSpeed: 12
   mouseSensitivy: 2
---- !u!136 &753842423
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753842420}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &753842424
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12227,7 +12218,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753842420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14343,6 +14334,7 @@ GameObject:
   - component: {fileID: 874954671}
   - component: {fileID: 874954673}
   - component: {fileID: 874954672}
+  - component: {fileID: 874954675}
   m_Layer: 0
   m_Name: CamPrincipal
   m_TagString: Untagged
@@ -14449,6 +14441,18 @@ Transform:
   m_Father: {fileID: 1783041398}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -127.618, z: 0}
+--- !u!114 &874954675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874954670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bac1122c88d364fa0b5bd69c6c40d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &885840329
 GameObject:
   m_ObjectHideFlags: 0
@@ -14665,7 +14669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918468785}
+      - m_Target: {fileID: 1231342276}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
@@ -18528,7 +18532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -45, y: 0}
+  m_AnchoredPosition: {x: -35, y: 0}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1053411239
@@ -19027,6 +19031,7 @@ GameObject:
   - component: {fileID: 1108117520}
   - component: {fileID: 1108117518}
   - component: {fileID: 1108117519}
+  - component: {fileID: 1108117521}
   m_Layer: 0
   m_Name: CamAuxiliar
   m_TagString: Untagged
@@ -19125,6 +19130,18 @@ Transform:
   m_Father: {fileID: 311480268}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1108117521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108117517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bac1122c88d364fa0b5bd69c6c40d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1111697917
 GameObject:
   m_ObjectHideFlags: 0
@@ -20508,6 +20525,7 @@ GameObject:
   - component: {fileID: 1231342272}
   - component: {fileID: 1231342271}
   - component: {fileID: 1231342270}
+  - component: {fileID: 1231342276}
   m_Layer: 5
   m_Name: CanvasPrincipal
   m_TagString: CvPrincipal
@@ -20553,7 +20571,6 @@ MonoBehaviour:
   panelControles: {fileID: 1824642775}
   modificaControles: {fileID: 1477619479}
   playerController: {fileID: 753842422}
-  aniPanel: {fileID: 1918468785}
 --- !u!114 &1231342272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20646,6 +20663,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &1231342276
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231342269}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f30f704740b2af4984616103785e27d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1237953406
 GameObject:
   m_ObjectHideFlags: 0
@@ -21916,7 +21954,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918468785}
+      - m_Target: {fileID: 1231342276}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
@@ -25701,7 +25739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -45, y: 0}
+  m_AnchoredPosition: {x: -35, y: 0}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1544348457
@@ -29344,6 +29382,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamPrincipal
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e3281f3c33210264f929980f3d84c70e,
+        type: 3}
+      propertyPath: m_TagString
+      value: CanvasCam
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3281f3c33210264f929980f3d84c70e, type: 3}
 --- !u!1 &1783041397 stripped
@@ -29746,7 +29789,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918468785}
+      - m_Target: {fileID: 1231342276}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
@@ -31222,7 +31265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45, y: -45}
+  m_AnchoredPosition: {x: 35, y: -35}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1900929324
@@ -31780,7 +31823,6 @@ GameObject:
   - component: {fileID: 1918468788}
   - component: {fileID: 1918468787}
   - component: {fileID: 1918468786}
-  - component: {fileID: 1918468785}
   m_Layer: 5
   m_Name: PanelBtnAccesorios
   m_TagString: Untagged
@@ -31788,27 +31830,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &1918468785
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918468784}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1f30f704740b2af4984616103785e27d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1918468786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31897,7 +31918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -200}
+  m_AnchoredPosition: {x: 150, y: -290}
   m_SizeDelta: {x: 300, y: 381.74597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1922737363
@@ -36424,7 +36445,7 @@ PrefabInstance:
     - target: {fileID: 3628043310309186315, guid: bc5fe80d55522db4eba01c0c1f02688e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc5fe80d55522db4eba01c0c1f02688e, type: 3}
