@@ -22,7 +22,6 @@ public class RotacionAltura : MonoBehaviour
         float valorRotacionX = value * 360f;
         float valorRotacionY = value * 360f;
         
-
         switch (tipoRotacion)
         {
             case 0:

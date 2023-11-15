@@ -84,6 +84,7 @@ public class PlayerController : MonoBehaviour
     public void DefaultMovement()
     {
         saveKeys = false;
+        CleanInput();
         float forwardSpeed = Input.GetAxis("Vertical") * moveSpeed;
         float sideSpeed = Input.GetAxis("Horizontal") * moveSpeed;
 

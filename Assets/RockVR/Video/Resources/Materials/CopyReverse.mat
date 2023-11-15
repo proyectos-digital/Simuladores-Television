@@ -9,8 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: CopyReverse
   m_Shader: {fileID: 4800000, guid: 969273fd8374b2147b215100fbc27c59, type: 3}
-  m_ValidKeywords:
-  - REVERSE_LEFT_RIGHT
+  m_ValidKeywords: []
   m_InvalidKeywords:
   - _EMISSION
   m_LightmapFlags: 1

@@ -36,8 +36,8 @@ public class TomaElementos : MonoBehaviour
             //Toma el elemento
             if (Input.GetKeyDown(KeyCode.Q) && posicionElemento.childCount == 0)
             {
-                elementos.transform.SetParent(posicionElemento);            //El elemento se colocará dentro del objeto que esta en el player
-                elementos.transform.position = posicionElemento.position;   //Le digo que el elemento debe quedar en la misma posición que el padre
+                elementos.transform.SetParent(posicionElemento); 
+                elementos.transform.position = posicionElemento.position;
                 elementos.transform.rotation = posicionElemento.rotation;
             }
             else if(Input.GetKeyDown(KeyCode.Q) && posicionElemento.childCount > 0)

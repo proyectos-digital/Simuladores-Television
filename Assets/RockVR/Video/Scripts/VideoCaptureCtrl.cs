@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading;
 using System.Collections.Generic;
 using RockVR.Common;
+using TMPro;
 
 namespace RockVR.Video
 {
@@ -23,6 +24,7 @@ namespace RockVR.Video
         /// Get or set the <c>AudioCapture</c> component.
         /// </summary>
         /// <value>The <c>AudioCapture</c> component.</value>
+
         public AudioCapture audioCapture
         {
             get
