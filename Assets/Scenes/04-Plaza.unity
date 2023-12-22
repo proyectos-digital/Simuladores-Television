@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.64907485, g: 0.6911994, b: 0.68366766, a: 1}
+  m_IndirectSpecularColor: {r: 0.64997786, g: 0.6918087, b: 0.68398505, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2162,7 +2162,7 @@ GameObject:
   - component: {fileID: 127111989}
   - component: {fileID: 127111988}
   - component: {fileID: 127111987}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4459,7 +4459,7 @@ GameObject:
   - component: {fileID: 171691021}
   - component: {fileID: 171691020}
   - component: {fileID: 171691019}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaLeftTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4537,7 +4537,7 @@ GameObject:
   - component: {fileID: 172256893}
   - component: {fileID: 172256892}
   - component: {fileID: 172256891}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14361,6 +14361,183 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &648144658
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.402
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.764
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.322
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145299, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145309, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Player (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81c84725e94d30d4a89d580c484764a7, type: 3}
+--- !u!114 &648144659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2225225558604145298, guid: 81c84725e94d30d4a89d580c484764a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 648144658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6806932ef40cc9b4e95098a4be3e7a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &648144660 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2225225559269147961, guid: 81c84725e94d30d4a89d580c484764a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 648144658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &648144661 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2225225559444207170, guid: 81c84725e94d30d4a89d580c484764a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 648144658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &648318798
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3418799703113505414, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: orientation
+      value: 
+      objectReference: {fileID: 648144660}
+    - target: {fileID: 3418799703375876977, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_Name
+      value: CameraObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876982, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: playerMov
+      value: 
+      objectReference: {fileID: 648144659}
+    - target: {fileID: 3418799703375876982, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: cameraPosition
+      value: 
+      objectReference: {fileID: 648144661}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876983, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3ca61c79d5d86643ac2bffc6b1b660b, type: 3}
 --- !u!1001 &660157687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14614,7 +14791,7 @@ GameObject:
   - component: {fileID: 666017756}
   - component: {fileID: 666017755}
   - component: {fileID: 666017754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaLeftBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23257,7 +23434,7 @@ GameObject:
   - component: {fileID: 1041932318}
   - component: {fileID: 1041932317}
   - component: {fileID: 1041932316}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30300,7 +30477,7 @@ GameObject:
   - component: {fileID: 1323581192}
   - component: {fileID: 1323581191}
   - component: {fileID: 1323581190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31121,7 +31298,7 @@ GameObject:
   - component: {fileID: 1355914381}
   - component: {fileID: 1355914380}
   - component: {fileID: 1355914379}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain_(0.00, 0.00, -40.00)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32663,7 +32840,7 @@ GameObject:
   - component: {fileID: 1440849241}
   - component: {fileID: 1440849240}
   - component: {fileID: 1440849239}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaRightTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41456,7 +41633,7 @@ GameObject:
   - component: {fileID: 1845610172}
   - component: {fileID: 1845610171}
   - component: {fileID: 1845610170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaRightBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43413,7 +43590,7 @@ GameObject:
   - component: {fileID: 1923985358}
   - component: {fileID: 1923985357}
   - component: {fileID: 1923985356}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TerrainPlazaLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43885,7 +44062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1958049929
 MonoBehaviour:
   m_ObjectHideFlags: 0
