@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2225225558604145309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2225225559508508404}
@@ -69,7 +69,7 @@ MonoBehaviour:
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   orientation: {fileID: 2225225559269147961}
 --- !u!1 &2225225559269147962
 GameObject:
@@ -80,7 +80,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2225225559269147961}
-  - component: {fileID: 1469171126415991816}
   m_Layer: 0
   m_Name: Orientation
   m_TagString: Untagged
@@ -103,19 +102,6 @@ Transform:
   m_Father: {fileID: 2225225558604145299}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1469171126415991816
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2225225559269147962}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.22
-  m_Center: {x: -0.06, y: 0.21, z: 0.66}
 --- !u!1 &2225225559444207171
 GameObject:
   m_ObjectHideFlags: 0

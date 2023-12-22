@@ -5,7 +5,7 @@ using RockVR.Common;
 using static RockVR.Video.VideoCaptureBase;
 using System.Threading;
 using UnityEngine.Playables;
-using UnityEngine.Windows.WebCam;
+//using UnityEngine.Windows.WebCam;
 using System.Collections;
 
 namespace RockVR.Video.Demo
