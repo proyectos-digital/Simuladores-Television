@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         isMove = !isMove;
     }
 
-    private void MyInput(){
+    private void MyInput(){     
         if (!isMove)
             return;
         horizontalInput = Input.GetAxisRaw("Horizontal");
