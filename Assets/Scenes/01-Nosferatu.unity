@@ -5875,6 +5875,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145309, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c84725e94d30d4a89d580c484764a7, type: 3}
 --- !u!1 &132705043
@@ -6075,6 +6080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CameraObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876977, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3418799703375876982, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
         type: 3}
@@ -22664,7 +22674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &640417991
 Transform:
   m_ObjectHideFlags: 0
@@ -46020,7 +46030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1290217675
 Transform:
   m_ObjectHideFlags: 0
@@ -50200,7 +50210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1455276916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50241,7 +50251,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455276915}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

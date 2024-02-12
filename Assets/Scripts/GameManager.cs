@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject estudio;
     public AudioListener audioListener;
 
-    public static bool btn1 = false;
+    public static bool btn1 = true;
     void Start()
     {
         ActivateScene();

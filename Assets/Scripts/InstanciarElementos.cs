@@ -46,6 +46,7 @@ public class InstanciarElementos : MonoBehaviour
 
 public void NuevoAccersorio(int accesorio)
     {
+        //
         switch(accesorio)
         {
             case 0:
