@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class ActivarPanel : MonoBehaviour
 {   
     [Header ("Paneles")]
-    public GameObject canvasEditarElm;
+    public GameObject canvasEditarElm, canvasInfo;
     private InstanciarElementos inAccesorios;
     private PlayerController playerController;
+    private bool active;
 
     void Start()
     {
@@ -17,17 +18,58 @@ public class ActivarPanel : MonoBehaviour
         playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    //Para reacomodar
+    /*
+     void Update()
+    {
+        if(active && Input.GetKeyUp(KeyCode.Q)) {
+            lightObj.enabled = !lightObj.isActiveAndEnabled;
+            lightObj.GetComponentInChildren<Renderer>().material = lightObj.enabled ? materialOn : materialOff;
+            txtInfo.text = lightObj.enabled ? "Presiona Q para apagar la Luz.": "Presiona Q para encender Luz.";
+        }
+    }
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Player") {
+            active = true;
+            panelInfo.SetActive(true);
+            txtInfo.text = lightObj.enabled ? "Presiona Q para apagar la Luz." : "Presiona Q para encender Luz.";
+        }
+    }
+    private void OnTriggerExit(Collider other) {
+        if (other.tag == "Player") {
+            active = false;
+            txtInfo.text = "";
+            panelInfo.SetActive(false);
+        }
+    }
+    */
+    private void Update()
+    {
+        if (active && Input.GetKeyUp(KeyCode.Q))
+        {
+            Debug.Log("Aqui cambiamos el modo");
+            canvasEditarElm.SetActive(true);
+        }
+    }
+
+        private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-            canvasEditarElm.SetActive(true);
+            active = true;
+            //Cambiar por tecla Q para acceder al panel
+            Debug.Log("aqui estamos");
+            //canvasEditarElm.SetActive(true);
+            canvasInfo.SetActive(true);
+            
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        canvasEditarElm.SetActive(false);
+        //canvasEditarElm.SetActive(false);
+        canvasInfo.SetActive(false);
+        //active = false;
     }
 
     public void EliminarAccesorio(int accesorioElim)

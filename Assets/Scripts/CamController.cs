@@ -30,8 +30,8 @@ public class CamController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         PanelDia.SetActive(true);
-        playerController.LockCursor();
-        ManejoCamaras(4);
+        //playerController.LockCursor();
+        //ManejoCamaras(4);
     }
     public void ManejoCamaras(int caso)
     {

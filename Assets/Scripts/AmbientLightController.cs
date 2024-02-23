@@ -27,7 +27,7 @@ public class AmbientLightController : MonoBehaviour
             case 2:
                 RenderSettings.skybox = dayMaterial;
                 RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Skybox;
-                sunFlare.gameObject.SetActive(false);
+                sunFlare.gameObject.SetActive(true);
                 EmissionMaterial.DisableKeyword("_EMISSION");
                 break;
             case 3:
@@ -36,7 +36,7 @@ public class AmbientLightController : MonoBehaviour
                 RenderSettings.fog = true;
                 RenderSettings.fogColor = new Color32(0x67, 0x4E, 0x28, 0xff);
                 RenderSettings.fogDensity = 0.023f;
-                //sunFlare.gameObject.SetActive(true);
+                sunFlare.gameObject.SetActive(true);
                 EmissionMaterial.DisableKeyword("_EMISSION");
                 break;
             case 4:

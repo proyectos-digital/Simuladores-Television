@@ -14312,7 +14312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154c9b1cddf9037488998217fd2a13b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasEditarElm: {fileID: 1620209747}
+  canvasEditarElm: {fileID: 438880354}
+  canvasInfo: {fileID: 1620209747}
 --- !u!114 &408353894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15040,7 +15041,7 @@ PrefabInstance:
     - target: {fileID: 3492042670222475891, guid: e5c2b42b1c5d75746b0df0c1e3b5e40e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3492042670222475891, guid: e5c2b42b1c5d75746b0df0c1e3b5e40e,
         type: 3}
@@ -28667,7 +28668,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154c9b1cddf9037488998217fd2a13b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasEditarElm: {fileID: 1972603664}
+  canvasEditarElm: {fileID: 1692744759}
+  canvasInfo: {fileID: 1972603664}
 --- !u!65 &813272996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33896,7 +33898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CONFIGURACI\xD3N"
+  m_text: "PRESIONA Q PARA ABRIR CONFIGURACI\xD3N"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -34676,7 +34678,7 @@ PrefabInstance:
     - target: {fileID: 8080188927037912994, guid: eb12c9dd2a8885a499ed4896d989d954,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8080188927037912994, guid: eb12c9dd2a8885a499ed4896d989d954,
         type: 3}
@@ -58115,7 +58117,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692744759}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -71786,7 +71788,7 @@ PrefabInstance:
     - target: {fileID: 1943594681291040894, guid: b4708ab4a37a54f45b085e149e927a3d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1943594681291040894, guid: b4708ab4a37a54f45b085e149e927a3d,
         type: 3}

@@ -110,12 +110,14 @@ public class PlayerController : MonoBehaviour
         Camera.main.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
     }
 
+    //Desactivar cuando se entre en inventario o config
     public void LockCursor()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
+    //Activar cuando se entre en inventario o config
     public void UnlockCursor()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
