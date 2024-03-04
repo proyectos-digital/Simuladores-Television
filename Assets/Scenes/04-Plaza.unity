@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.64907485, g: 0.6911994, b: 0.68366766, a: 1}
+  m_IndirectSpecularColor: {r: 0.16560635, g: 0.121937476, b: 0.078503035, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 259874a2ad70ba540b7ea12bf58e3455,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 1d1e62ff3880b594f8b599377dc00368,
     type: 2}
 --- !u!196 &4
@@ -15540,6 +15541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2225225558604145309, guid: 81c84725e94d30d4a89d580c484764a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c84725e94d30d4a89d580c484764a7, type: 3}
 --- !u!114 &648144659 stripped
@@ -15582,6 +15588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CameraObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418799703375876977, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3418799703375876982, guid: a3ca61c79d5d86643ac2bffc6b1b660b,
         type: 3}
@@ -33590,6 +33601,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a470b5b0c5dad63439aa589ca8bac2bc,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a470b5b0c5dad63439aa589ca8bac2bc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -46957,7 +46973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1958049929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52540,6 +52556,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 811201465}
     m_Modifications:
+    - target: {fileID: 1120455452687681278, guid: 58e0fcda1206c0b44bace894896302d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1465754256545380457, guid: 58e0fcda1206c0b44bace894896302d7,
         type: 3}
       propertyPath: m_RootOrder
@@ -52600,11 +52621,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: borderParkTop
       objectReference: {fileID: 0}
+    - target: {fileID: 2241868021382980307, guid: 58e0fcda1206c0b44bace894896302d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345309907422827477, guid: 58e0fcda1206c0b44bace894896302d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2944068705621888265, guid: 58e0fcda1206c0b44bace894896302d7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 29c0030caa34ff649943b6e7e61073d0, type: 2}
+    - target: {fileID: 8670326472030521782, guid: 58e0fcda1206c0b44bace894896302d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58e0fcda1206c0b44bace894896302d7, type: 3}
 --- !u!1001 &1787298344363489247

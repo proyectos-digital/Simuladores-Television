@@ -8,9 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 3f70a07e8546d6c4dade448b255b734b
-  m_OcclusionCullingData: {fileID: 36300000, guid: 5dc2ead0cd7a7ad43b212421ec53f468,
-    type: 2}
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -14804,6 +14803,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 13a7fcc91564c084c8814b2752318bca,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13a7fcc91564c084c8814b2752318bca,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -27148,6 +27152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Actriz
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 17a7956975177fd4b84f87f953a3ee6c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 17a7956975177fd4b84f87f953a3ee6c,
         type: 3}
