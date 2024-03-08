@@ -769,6 +769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2990,7 +2995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &141545607
 Transform:
   m_ObjectHideFlags: 0
@@ -11661,6 +11666,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2795318547083921244, guid: dc20bf501e8161b40859eb66568d49f6,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795318547083921244, guid: dc20bf501e8161b40859eb66568d49f6,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17290,6 +17300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -21026,6 +21041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arbusto (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
         type: 3}
@@ -25698,7 +25718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1115700413
 Transform:
   m_ObjectHideFlags: 0
@@ -28501,6 +28521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arbusto (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
         type: 3}
@@ -33447,6 +33472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arbusto (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 05ea8a901a465024b8df28773ec3d072,
         type: 3}
@@ -40686,6 +40716,10 @@ PrefabInstance:
       value: Birch_tree1
       objectReference: {fileID: 0}
     - target: {fileID: 1216688828669844, guid: 47356d574ebc3a545bfaef26eb02a2ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216688828669844, guid: 47356d574ebc3a545bfaef26eb02a2ea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -44158,7 +44192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1916739923
 Transform:
   m_ObjectHideFlags: 0
