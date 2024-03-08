@@ -3,7 +3,12 @@ guid: 2223d83b183b6684bbb5d52b456ed671
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cancha_futbol
+    second: {fileID: 2100000, guid: aae6fefc7c930e448a6eb48a71b05b73, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

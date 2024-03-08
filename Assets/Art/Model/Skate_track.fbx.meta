@@ -3,7 +3,27 @@ guid: 9f02004b4410a2b409e789220468ea82
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface15
+    second: {fileID: 2100000, guid: 1c138bd44b6dfb0459fba360319ebb4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_banquillos
+    second: {fileID: 2100000, guid: 704e7757320a0864da1072a4104240ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasto
+    second: {fileID: 2100000, guid: 0282ddb714f190c40aea5801fb231940, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pista_patinaje
+    second: {fileID: 2100000, guid: 513b20f468977074aa92ce3a1d87171b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
